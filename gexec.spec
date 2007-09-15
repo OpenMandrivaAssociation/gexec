@@ -22,7 +22,6 @@ Requires:	authd >= 0.2, xinetd, tftp
 Provides:	%{name}-%{version}
 Buildrequires:	libe-devel >= 0.2.1, %{mklibname authd0}-devel >= 0.2
 #libganglia-monitor1-devel >= 2.4
-#Packager:       Antoine Ginies <aginies@mandrakesoft.com>
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 Prefix:		%{_prefix}
 
