@@ -24,7 +24,6 @@ Provides:	%{name}-%{version} = %{version}-%{release}
 Buildrequires:	libe-devel >= 0.2.1, %{mklibname authd}-devel >= 0.2
 BuildRequires:	openssl-devel
 #libganglia-monitor1-devel >= 2.4
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 Prefix:		%{_prefix}
 
 %package	-n %{devel_name}
