@@ -6,7 +6,7 @@
 %define lib_name        %mklibname %{name} %{lib_major}
 %define devel_name	%mklibname -d -s %{name}
 
-Summary:	Gexec is a scalable cluster remote execution 
+Summary:	Scalable cluster remote execution 
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
