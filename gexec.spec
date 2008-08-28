@@ -1,6 +1,6 @@
 %define name	gexec	
 %define	version 0.3.6
-%define release	%mkrel 6
+%define release	%mkrel 7
 %define lib_name_orig lib%{name}
 %define lib_major 0
 %define lib_name        %mklibname %{name} %{lib_major}
@@ -31,6 +31,7 @@ Prefix:		%{_prefix}
 Summary:        Gexec scalable cluster remote execution devel package
 Provides:       %{name}-devel-%{version} = %{version}-%{release}
 Group:          Development/Other
+Obsoletes:	%{mklibname gexec 0 -d}
 
 %description
 GEXEC is a scalable cluster remote execution system which provides 
