@@ -1,6 +1,6 @@
 %define name	gexec	
 %define	version 0.3.6
-%define release	%mkrel 8
+%define release	%mkrel 9
 %define lib_name_orig lib%{name}
 %define lib_major 0
 %define lib_name        %mklibname %{name} %{lib_major}
