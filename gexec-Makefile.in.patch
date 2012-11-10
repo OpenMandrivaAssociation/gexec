@@ -1,0 +1,13 @@
+--- Makefile.in	Fri Mar 22 13:28:17 2002
++++ Makefile.in	Tue Apr 16 15:03:42 2002
+@@ -482,9 +482,7 @@
+ 
+ 
+ install-data-local: $(EXTRA_DIST)
+-	$(INSTALL_DATA) config/gexec /etc/xinetd.d/gexec
+-	@echo "Sending SIGUSR2 to xinetd"
+-	kill -USR2 `cat /var/run/xinetd.pid`
++	echo "solving problem"
+ 
+ uninstall-local: $(EXTRA_DIST)
+ 	if [ -f /etc/xinetd.d/gexec ]; then   \
