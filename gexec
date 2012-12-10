@@ -1,0 +1,13 @@
+#!/bin/bash
+# Wrapper for calling gexec with the right environement
+# It loads the /etc/profile.d/cluster.sh for getting the right
+# environnement before calling the real gexec
+
+PROFILE=/etc/profile.d/cluster.sh
+GEXEC_PATH=/usr/bin
+
+if [ -f $PROFILE ]; then
+source $PROFILE
+fi
+exec $GEXEC_PATH/gexec_wrap $@
+~                              

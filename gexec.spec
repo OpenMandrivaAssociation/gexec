@@ -107,3 +107,123 @@ fi
 
 # %config(noreplace) /etc/X11/wmsession.d/*
 
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.3.6-11mdv2011.0
++ Revision: 610845
+- rebuild
+
+* Fri Apr 23 2010 Funda Wang <fwang@mandriva.org> 0.3.6-10mdv2010.1
++ Revision: 538076
+- rebuild
+
+* Wed Apr 21 2010 Funda Wang <fwang@mandriva.org> 0.3.6-9mdv2010.1
++ Revision: 537374
+- rebuild
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 0.3.6-8mdv2010.0
++ Revision: 437672
+- rebuild
+
+* Thu Aug 28 2008 Adam Williamson <awilliamson@mandriva.org> 0.3.6-7mdv2009.0
++ Revision: 276767
+- obsolete old devel package
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.3.6-6mdv2009.0
++ Revision: 245946
+- rebuild
+
+* Mon Feb 18 2008 Thierry Vignaud <tv@mandriva.org> 0.3.6-4mdv2008.1
++ Revision: 170860
+- rebuild
+- fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+
+* Sun Feb 17 2008 Michael Scherer <misc@mandriva.org> 0.3.6-3mdv2008.1
++ Revision: 169881
+- rebuild to clean youri output
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sat Sep 22 2007 Nicolas Vigier <nvigier@mandriva.com> 0.3.6-2mdv2008.0
++ Revision: 92241
+- add buildrequires on openssl-devel
+- rebuild for new libopenssl
+ - fix docdir
+ - fix provides
+ - fix develname
+ - fix buildrequires
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill packaged tag
+
+  + Antoine Ginies <aginies@mandriva.com>
+    - use %%mkrel macro
+
+
+* Thu Nov 17 2005 Antoine Ginies <aginies@n3.mandriva.com> 0.3.6-1mdk
+- 0.3.6 release
+- few fix in spec file
+
+* Tue Mar 22 2005 Antoine Ginies <aginies@n1.mandrakesoft.com> 0.3.5-8mdk
+- rebuild
+
+* Wed Apr 21 2004 Erwan Velu <erwan@mandrakesoft.com> 0.3.5-7mdk
+- Rebuild against authd (RSA fixes)
+
+* Wed Apr 21 2004 Erwan Velu <erwan@mandrakesoft.com> 0.3.5-6mdk
+- Rebuild against latest libe, authd
+
+* Thu Apr 08 2004 Erwan Velu <erwan@mandrakesoft.com> 0.3.5-5mdk
+- Enabling gexec wrapper with cluster.sh
+- using grep -w instead of grep for gexec in /etc/services
+
+* Fri Jan 30 2004 Antoine Ginies <aginies@bi.mandrakesoft.com> 0.3.5-4mdk
+- rebuild cooker
+
+* Fri Jan 03 2003 Antoine Ginies <aginies@mandrakesoft.com> 0.3.5-3mdk
+- rebuild for new glibc
+
+* Fri Jan 03 2003 Antoine Ginies <aginies@mandrakesoft.com> 0.3.5-2mdk
+- rebuild fo new glibc
+
+* Wed Nov 06 2002 Clic-dev <clic-dev-public@mandrakesoft.com> 0.3.5-1mdk
+- release 0.3.5
+
+* Tue Aug 06 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.4-8mdk
+- build with gcc 3.2
+
+* Thu Jul 11 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.4-7mdk
+- Build on 8.2 with 2.96
+
+* Fri Jul 05 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.4-6mdk
+- fix too many argument error
+
+* Fri Jul 05 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.4-5mdk
+- fix xinetd restart service
+
+* Tue Jun 25 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.4-4mdk
+- fix %%post tag
+
+* Thu Jun 20 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.4-3mdk
+- fix %%postun and add require tftp
+
+* Fri May 17 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.4-2mdk
+- build gcc 3.1
+
+* Tue May 07 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.4-1mdk
+- new release
+
+* Thu Apr 25 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.3-5mdk
+- provide Ganglia support
+
+* Wed Apr 24 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.3-4mdk
+- new release
+
+* Mon Apr 15 2002 Antoine Ginies <aginies@mandrakesoft.com> 0.3.0-3mdk
+- first release for Mandrakesoft
+

@@ -1,0 +1,31 @@
+Installation is done via RPMs. Before installing GEXEC, authd must already be installed on all nodes on the cluster (information on how to do this is here). With authd in place, we can then install GEXEC by installing the RPM on all nodes (e.g., cluster nodes bar1, bar2, ..)
+
+bar1# rpm -ivh gexec-0.2.0-1.i386.rpm
+bar2# rpm -ivh gexec-0.2.0-1.i386.rpm
+bar3# ...
+
+The RPM install/uninstall procedures deal with installing/uninstalling of the software and the starting/stopping of the daemons. Since GEXEC runs via xinetd, starting/stopping of the daemons simply involves the addition/removal of a file in /etc/xinetd.d and sending SIGUSR2 to xinetd to cause xinetd to reread its configuration files.
+
+GEXEC can be used interactively using the gexec client or programmatically using the GEXEC library, libgexec.a. With the client, node selection can be done in one of two ways. It can done by explictly naming a set of nodes using the GEXEC_SVRS environment variable:
+
+# export GEXEC_SVRS="tgl0 tgl1 tgl2 tgl3"
+# gexec -n 4 hostname
+1 tgl1
+3 tgl3
+0 tgl0
+2 tgl2
+
+Alternatively, node selection can also be done using Ganglia by specifying one or more potential gmond servers to query. The first gmond server that is both up and returns a non-empty set of nodes will be used to provide the list of nodes ('-n 0' means all the nodes, a five-node cluster in the example below):
+
+# export GEXEC_GMOND_SVRS="tgl1 tgl3"
+# gexec -n 0 hostname
+1 tgl1
+4 tgl4
+3 tgl3
+0 tgl0
+2 tgl2
+
+Send me email if you're having problems, find bugs, or have any random comments: Brent Chun (bnc@caltech.edu). Thus far, I have only tested this software on a cluster of Intel boxes running Redhat 7.2.
+
+You might also be interested in GEXEC's web page on freshmeat.
+
