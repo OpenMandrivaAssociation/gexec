@@ -12,7 +12,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Networking/Remote access
-URL:		http://www.cs.berkeley.edu/~bnc/gexec/
+URL:		https://www.cs.berkeley.edu/~bnc/gexec/
 Source:		%{name}-%{version}.tar.bz2
 Source1:	gexecd
 Source2:	gexec.README
