@@ -21,6 +21,11 @@ Patch0:		gexec-Makefile.in.patch
 #Patch0:		
 Requires:	authd >= 0.2, xinetd, tftp
 Provides:	%{name}-%{version} = %{version}-%{release}
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 Buildrequires:	libe-devel >= 0.2.1, %{mklibname authd}-devel >= 0.2
 BuildRequires:	openssl-devel
 #libganglia-monitor1-devel >= 2.4
